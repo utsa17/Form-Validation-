@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        input {
+            background-color: rgb(243, 204, 231);
+        }
+        
+        body {
+            background: url("blue-gradient-blank-background-business_53876-120508.jpg") no-repeat;
+            margin: auto;
+            background-size: 100%;
+            border: black;
+        }
+    </style>
+    <script type="text/javascript">
+        function abc() {
+            document.bgColor = "pink"
+        }
+
+        function def() {
+            document.bgColor = "black"
+        }
+
+        function ghi() {
+            document.bgColor = "purple"
+        }
+
+        function jkl() {
+            document.bgColor = "red"
+        }
+
+        function valid() {
+            var x = document.f1.a1.value
+            if (x.length <= 2)
+                alert("Invalid name crecidentials")
+
+            var y = document.f1.a2.value
+            if (y.length <= 2)
+                alert("Invalid Father's name crecidentials")
+
+            var z = document.f1.a3.value
+            if (z.length <= 2)
+                alert("Invalid Mother's name crecidentials")
+            var a = document.f1.c1.value
+            if (a.length <= 2)
+                alert("Invalid City name crecidentials")
+
+            var e = document.f1.e1.value
+            var m = ".@"
+            if (e.match(m)) {
+
+            } else {
+                alert("ENTER VALID YOU STUPID")
+            }
+
+            var p = document.f1.m.value
+            if (p.length < 10 || p.length > 10) {
+                alert("Invalid phone number")
+            }
+
+            var k = document.f1.d1.value
+            if (k == "") {
+                alert("Fill password please")
+            }
+            if (k.length < 8) {
+                alert("Invalid password")
+            }
+            if (k.length > 15) {
+                alert("Invalid password")
+            }
+            var l = document.f1.e2.value
+            if (k != l) {
+                alert("Passwords do not match")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>
+        <center>Hustle Coders</center>
+    </h1>
+    <h2>
+        <center><i>Guidance by: Padam Pandey</i></center>
+    </h2>
+
+    <h3>
+        <center>For admissions fill the registration form provided below: </center>
+    </h3>
+    <br><br>
+
+    <center>
+        <form name="f1">
+            NAME <input type="text" name="a1" size="30" value="" maxlength="30">
+            <br><br><br> FATHER'S NAME <input type="text" name="a2" size="30" value="" maxlength="30">
+            <br><br><br> MOTHER'S NAME <input type="text" name="a3" size="30" value="" maxlength="30">
+            <!--<br><br><br>GENDER
+            <input type="radio" name="g">MALE
+            <input type="radio" name="g">FEMALE
+            <input type="radio" name="g">OTHER <br><br><br> Coding Preferences <select>
+                <br>
+            <option>
+
+            </option><br>
+            <option> Core Python</option><br>
+            <option>Java</option><br>
+            <option>C/C++</option><br>
+            <option>MySQL</option><br>
+            <option>Web Development Course</option><br>
+            <option>Android Development Course</option><br>
+            <option>7</option><br>
+            <option>8</option><br>
+            <option>9</option><br>
+            <option>10</option><br>
+            <option>11</option><br>
+            <option>12</option><br>-->
+
+            </select><br> <br><br>CITY <input type="text" name="c1" value=""> <br><br><br> E-mail ID<input type="text" name="e1" value=""><br><br><br> Mobile Number<input type="text" name="m" value=""><br><br><br>
+            <!--FACILITY OPTED<input type="radio" name="fo">BUS
+            <input type="radio" name="fo">HOSTEL+MESS
+            <br> <br><br>About Yourself <textarea rows="5" columns="20"></textarea>
+            <br><br><br>
+            <input type="Submit" value="Submit">
+            <input type="Reset" value="Reset">-->
+            PASSWORD<input type="password" name="d1" value="">
+            <br><br><br> CONFIRM PASSWORD<input type="password" name="e2" value="">
+
+
+        </form>
+    </center>
+    <center><input type="button" value="submit" onclick="valid()"></center>
+    <input type="button" value="pink" onclick="abc()">
+    <input type="button" value="black" onclick="def()">
+    <input type="button" value="purple" onclick="ghi()">
+    <input type="button" value="red" onclick="jkl()">
+</body>
+
+</html>
